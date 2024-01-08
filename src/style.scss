@@ -1,0 +1,603 @@
+// variable start here
+$c_primary: #414de1;
+$c_secondary: #00a1ff;
+$c_heading: #1d1d1d;
+$light: #ecf6fd;
+$light_grey: #eef2f6;
+$grey: #9aa4b2;
+$c_black: #000;
+$c_white: #ffffff;
+$c_red: #d92d20;
+$c_green: #079455;
+$c_orange: #dc6803;
+$f_body: "Graphik";
+$f_goudy: "Goudy Bookletter 1911";
+$transition: all 0.3s ease-in-out 0s;
+// veriable end
+
+// fonts
+@import url("https://fonts.googleapis.com/css2?family=Goudy+Bookletter+1911&display=swap");
+
+@font-face {
+    font-family: "Graphik";
+    src: url("../public/sitefont/Graphik-Black.woff2") format("woff2"),
+        url("../public/sitefont/Graphik-Black.woff") format("woff");
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Graphik";
+    src: url("../public/sitefont/Graphik-BlackItalic.woff2") format("woff2"),
+        url("../public/sitefont/Graphik-BlackItalic.woff") format("woff");
+    font-weight: 900;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Graphik";
+    src: url("../public/sitefont/Graphik-Bold.woff2") format("woff2"),
+        url("../public/sitefont/Graphik-Bold.woff") format("woff");
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Graphik";
+    src: url("../public/sitefont/Graphik-LightItalic.woff2") format("woff2"),
+        url("../public/sitefont/Graphik-LightItalic.woff") format("woff");
+    font-weight: 300;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Graphik";
+    src: url("../public/sitefont/Graphik-Light.woff2") format("woff2"),
+        url("../public/sitefont/Graphik-Light.woff") format("woff");
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Graphik";
+    src: url("../public/sitefont/Graphik-ExtralightItalic.woff2") format("woff2"),
+        url("../public/sitefont/Graphik-ExtralightItalic.woff") format("woff");
+    font-weight: 200;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Graphik";
+    src: url("../public/sitefont/Graphik-Extralight.woff2") format("woff2"),
+        url("../public/sitefont/Graphik-Extralight.woff") format("woff");
+    font-weight: 200;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Graphik";
+    src: url("../public/sitefont/Graphik-BoldItalic.woff2") format("woff2"),
+        url("../public/sitefont/Graphik-BoldItalic.woff") format("woff");
+    font-weight: bold;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Graphik";
+    src: url("../public/sitefont/Graphik-Medium.woff2") format("woff2"),
+        url("../public/sitefont/Graphik-Medium.woff") format("woff");
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Graphik";
+    src: url("../public/sitefont/Graphik-Thin.woff2") format("woff2"),
+        url("../public/sitefont/Graphik-Thin.woff") format("woff");
+    font-weight: 100;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Graphik Super";
+    src: url("../public/sitefont/Graphik-Super.woff2") format("woff2"),
+        url("../public/sitefont/Graphik-Super.woff") format("woff");
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Graphik";
+    src: url("../public/sitefont/Graphik-MediumItalic.woff2") format("woff2"),
+        url("../public/sitefont/Graphik-MediumItalic.woff") format("woff");
+    font-weight: 500;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Graphik";
+    src: url("../public/sitefont/Graphik-RegularItalic.woff2") format("woff2"),
+        url("../public/sitefont/Graphik-RegularItalic.woff") format("woff");
+    font-weight: normal;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Graphik";
+    src: url("../public/sitefont/Graphik-Semibold.woff2") format("woff2"),
+        url("../public/sitefont/Graphik-Semibold.woff") format("woff");
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Graphik";
+    src: url("../public/sitefont/Graphik-Regular.woff2") format("woff2"),
+        url("../public/sitefont/Graphik-Regular.woff") format("woff");
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Graphik Super";
+    src: url("../public/sitefont/Graphik-SuperItalic.woff2") format("woff2"),
+        url("../public/sitefont/Graphik-SuperItalic.woff") format("woff");
+    font-weight: 900;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Graphik";
+    src: url("../public/sitefont/Graphik-SemiboldItalic.woff2") format("woff2"),
+        url("../public/sitefont/Graphik-SemiboldItalic.woff") format("woff");
+    font-weight: 600;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Graphik";
+    src: url("../public/sitefont/Graphik-ThinItalic.woff2") format("woff2"),
+        url("../public/sitefont/Graphik-ThinItalic.woff") format("woff");
+    font-weight: 100;
+    font-style: italic;
+    font-display: swap;
+}
+
+.goudy {
+    font-family: $f_goudy;
+}
+
+.ant-input-affix-wrapper {
+    padding: 14px 18px 14px 45px !important;
+    font-size: 16px !important;
+    background-color: transparent !important;
+    color: #9aa4b2 !important;
+    font-weight: 400 !important;
+}
+
+.ant-input-affix-wrapper:focus {
+    border-color: black !important;
+    box-shadow: 0.5px solid var(--border, #eef2f6) !important;
+    border-inline-end-width: none !important;
+    outline: 1px !important;
+}
+
+.ant-input-affix-wrapper:focus {
+    border-color: black !important;
+}
+
+// reset css start here
+* {
+    outline: none !important;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+}
+
+body {
+    background-color: $c_white;
+    color: $c_heading;
+    font-family: $f_body;
+}
+
+header {
+    position: fixed;
+    width: 100%;
+    top: 0;
+}
+
+a,
+a:hover {
+    //   color: $c_text;
+    transition: $transition;
+}
+
+b,
+strong {
+    font-weight: 600;
+}
+
+a {
+    text-decoration: none;
+    font-size: 16px;
+}
+
+li {
+    list-style: none;
+}
+
+:is(h1, h2, h3, h4, h5, h6) {
+    color: $c_heading;
+    margin-bottom: 0;
+    font-family: $f_body;
+}
+
+p {
+    margin-bottom: 0;
+}
+
+img {
+    position: unset !important;
+}
+
+figure {
+    line-height: 0;
+}
+
+button,
+select {
+    cursor: pointer;
+    font-family: $f_body;
+}
+
+h1,
+.hd_1 :where(h1, h2, h3, h4, h5, h6),
+.ab_cnt.hd_1 h1 {
+    font-size: 56px;
+    font-weight: 700;
+    line-height: 1.2;
+
+    @media screen and (max-width: 1399.98px) {
+        font-size: 45px;
+    }
+
+    @media screen and (max-width: 1199.98px) {
+        font-size: 42px;
+    }
+
+    @media screen and (max-width: 767.98px) {
+        font-size: 36px;
+    }
+
+    @media screen and (max-width: 575px) {
+        font-size: 28px;
+    }
+}
+
+h2,
+.hd_2 :where(h1, h2, h3, h4, h5, h6) {
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 1.2;
+
+    @media screen and (max-width: 1399.98px) {
+        font-size: 36px;
+    }
+
+    @media screen and (max-width: 1199.98px) {
+        font-size: 32px;
+    }
+
+    @media screen and (max-width: 767.98px) {
+        font-size: 28px;
+    }
+
+    @media screen and (max-width: 575px) {
+        font-size: 24px;
+    }
+}
+
+h3,
+.hd_3 :where(h1, h2, h3, h4, h5, h6) {
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 1.2;
+
+    @media screen and (max-width: 1399.98px) {
+        font-size: 36px;
+    }
+
+    @media screen and (max-width: 1199.98px) {
+        font-size: 32px;
+    }
+
+    @media screen and (max-width: 991.98px) {
+        font-size: 30px;
+    }
+
+    @media screen and (max-width: 991.98px) {
+        font-size: 25px;
+    }
+}
+
+h4,
+.hd_4 :where(h1, h2, h3, h4, h5, h6) {
+    font-size: 34px;
+    font-weight: 700;
+    line-height: 1.2;
+}
+
+h5,
+.hd_5 :where(h1, h2, h3, h4, h5, h6),
+.m_hd h3 {
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 1.2;
+
+    @media screen and (max-width: 1399.98px) {
+        font-size: 28px;
+    }
+}
+
+h6,
+.hd_6 :where(h1, h2, h3, h4, h5, h6) {
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 1.2;
+
+    @media screen and (max-width: 1199.98px) {
+        font-size: 22px;
+    }
+}
+
+ul {
+    padding: 0;
+}
+
+body,
+p,
+li {
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 1.2;
+    //   color: $c_text;
+    font-family: $f_body;
+
+    @media screen and (max-width: 1199.98px) {
+        font-size: 16px;
+    }
+}
+
+.conta_iner {
+    max-width: 1200px;
+    margin: 0 auto;
+
+    @media screen and (max-width: 1400px) {
+        width: 90%;
+    }
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
+
+    img {
+        @media screen and (max-width: 480px) {
+            max-width: 130px;
+        }
+    }
+}
+
+img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.scrolled {
+    background-color: $c_heading;
+    z-index: 1024;
+}
+
+
+
+.nav-belt {
+    display: flex;
+    background-color: #131921;
+
+    span {
+        color: #fff;
+    }
+
+    .nav-left {
+        display: flex;
+        padding: 8px;
+
+        .nav-logo {
+            display: flex;
+            flex-shrink: 0;
+            text-decoration: none;
+            padding: 1px 8px 0 6px;
+            margin: 1px;
+
+            figure {
+                height: 40px;
+                width: 120px;
+            }
+
+            span {
+                color: #fff;
+                margin-top: 4px;
+            }
+        }
+
+        .nav-logo:hover {
+            border: 1px solid #fff;
+            border-radius: 3px;
+        }
+
+        .nav-global-location-slot {
+            display: flex;
+            padding: 0 9px 0 9px;
+            margin: 5px 2px 5px 0;
+
+            .nav-location {
+                background-image: url("../public/images/location_map_icon.png");
+                height: 16px;
+                width: 17px;
+                background-repeat: no-repeat;
+                background-size: contain;
+                display: inline-block;
+                margin-top: 10px;
+            }
+
+            .glow-increase-block {
+                display: flex;
+                flex-direction: column;
+
+                span {
+                    color: #ccc;
+                    margin-top: 0;
+                    padding-right: 0;
+                    font-size: 12px;
+                    line-height: 14px;
+                    height: 14px;
+                    font-weight: 400;
+                }
+
+                span:nth-child(2) {
+                    color: #ffffff;
+                    font-size: 14px;
+                    line-height: 15px;
+                    font-weight: 700;
+                }
+            }
+        }
+
+        .nav-global-location-slot:hover {
+            border: 1px solid #ccc;
+            border-radius: 2px;
+        }
+    }
+
+    .nav-fill {
+        display: flex;
+        flex-direction: row;
+        margin: 0 10px;
+        padding: 10px 4px 10px 3px;
+        height: 60px;
+
+        input {
+            width: 100%;
+            line-height: 15px;
+            padding: 7px 10px 10px 0;
+            margin: 0;
+            border: 0;
+            height: 38px;
+            font-family: inherit;
+            font-size: 15px;
+            color: #111;
+            outline: 0;
+            -webkit-appearance: none;
+            box-shadow: none;
+            text-indent: 8px;
+            direction: ltr;
+        }
+
+        .nav-lens-container {
+            width: 40px;
+            background-color: #ffff;
+            max-width: 40px;
+            padding: 10px;
+            justify-content: center;
+            align-items: center;
+            cursor: pointer;
+        }
+
+        .nav-submit {
+            width: 40px;
+            background-color: #f3a847;
+            max-width: 40px;
+            padding: 10px;
+            justify-content: center;
+            align-items: center;
+            cursor: pointer;
+
+        }
+
+        .nav-submit::after {
+            content: "";
+            background-image: url("../public/images/search_icon.png");
+            background-repeat: no-repeat;
+            background-size: contain;
+            display: inline-block;
+            margin-top: 10px;
+
+        }
+
+    }
+
+    .nav-right {
+        display: flex;
+
+        .glow-increase-block {
+            display: flex;
+            flex-direction: column;
+
+            span {
+                color: #ccc;
+                margin-top: 0;
+                padding-right: 0;
+                font-size: 12px;
+                line-height: 14px;
+                height: 14px;
+                font-weight: 400;
+            }
+
+            span:nth-child(2) {
+                color: #ffffff;
+                font-size: 14px;
+                line-height: 15px;
+                font-weight: 700;
+            }
+        }
+
+        .nav-cart-count::after {
+            content: "";
+            position: absolute;
+            top: 0;
+            right: 0;
+            width: 20px;
+            height: 20px;
+            background-image: url("../public/images/cart.png");
+            background-repeat: no-repeat;
+            background-size: contain;
+            display: inline-block;
+            margin-top: 10px;
+
+        }
+    }
+}

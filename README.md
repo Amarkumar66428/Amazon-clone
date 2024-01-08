@@ -13,58 +13,33 @@ Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
 The page will reload when you make changes.\
 You may also see any lint errors in the console.
+Developing an Amazon clone entails creating a web application that matches the functionality and style of Amazon's e-commerce platform. The following is a simple plan for setting up a Git repository for an Amazon clone:
 
-### `npm test`
+Project framework: Establish the fundamental framework of your project. Organise your files and directories in a sensible manner. Typical directories include:
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+src: This directory contains your source code.
+The public folder contains static assets like as photos, fonts, and the main HTML page.
+styles: Maintains your CSS or preprocessor files.
+scripts: This folder contains JavaScript files.
+Create the HTML structure for your Amazon clone's primary pages, such as the homepage, product listing page, product details page, and shopping cart. Use semantic HTML to improve accessibility.
 
-### `npm run build`
+CSS style: Use CSS style to mimic the Amazon UI. You may either utilise a CSS framework such as Bootstrap or design your own unique styles. Ensure responsiveness for a unified experience across several devices.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+JavaScript Functionality: Use JavaScript to implement client-side functionality. Features could include:
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+The product listing and information are displayed.
+Shopping cart administration.
+Optional user authentication.
+Search feature is available.
+User feedback and ratings.
+Development of the backend:
+Create a server with your preferred backend technology (Node.js with Express, Django, Flask, Ruby on Rails, etc.). Implement the API endpoints required for:
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Product recovery.
+Authentication and authorization of users.
+Cart administration.
+Order fulfilment.
 
-### `npm run eject`
+User Authentication: Enable users to sign up, log in, and manage their accounts by implementing user authentication. Maintain safe password storage and session management.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Shopping Cart Functionality: Create the ability to add/remove goods from the cart, update amounts, and proceed to checkout. Consider leveraging technologies such as WebSockets to implement real-time updates.

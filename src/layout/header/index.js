@@ -1,4 +1,6 @@
 import React, { useEffect, useState } from 'react'
+import HeaderContent from '../../Components/headerContent';
+import SearchBar from '../../Components/searchbar';
 
 const Header = () => {
     const [scroll, setScroll] = useState(false);
@@ -20,24 +22,10 @@ const Header = () => {
                         </div>
                         <div className='nav-global-location-slot'>
                             <span className='nav-location' />
-                            <div className='glow-increase-block' >
-                                <span>DelIvering to california</span>
-                                <span>Update location</span>
-                            </div>
+                            <HeaderContent upperValue="DelIvering to california" lowerValue="Update location" />
                         </div>
                     </div>
-                    <div className='nav-fill'>
-                        <select>
-                            <option value selected>All</option>
-                        </select>
-                        <input placeholder='Search Amazon.in'></input>
-                        <div className='nav-lens-container'>
-                            <figure>
-                                <img src='https://m.media-amazon.com/images/G/01/style-snap/MLT_Icon_x2.png' alt="search_icon" />
-                            </figure>
-                        </div>
-                        <input type='submit' className='nav-submit' />
-                    </div>
+                    <SearchBar />
                     <div className='nav-right'>
                         <a className='nav-tools'>
                             <select>
@@ -45,18 +33,12 @@ const Header = () => {
                             </select>
                         </a>
                         <a>
-                            <div className='glow-increase-block'>
-                                <span>hello, sign in</span>
-                                <span>Account & Lists</span>
-                            </div>
+                            <HeaderContent upperValue="hello, sign in" lowerValue="Account & Lists" />
                         </a>
                         <a>
-                            <div className='glow-increase-block'>
-                                <span>Returns</span>
-                                <span>& Orders</span>
-                            </div>
+                            <HeaderContent upperValue="Returns" lowerValue="& Orders" />
                         </a>
-                        <a>
+                        <a className='nav-cart'>
                             <div>
                                 <span className='nav-cart-count'>0</span>
                             </div>
@@ -65,6 +47,25 @@ const Header = () => {
                             </div>
                         </a>
                     </div>
+                </div>
+                <div className='nav-xshop'>
+                    <ul>
+                        <li>ALl</li>
+                        <li>Fresh</li>
+                        <li>Amazon miniTv</li>
+                        <li>Sell</li>
+                        <li>Best Seller</li>
+                        <li>Today's Deal</li>
+                        <li>Mobiles</li>
+                        <li>Electronics</li>
+                        <li>Customer Service</li>
+                        <li>Prime</li>
+                        <li>Gift ideas</li>
+                        <li>New Release</li>
+                        <li>Home & Kitchen</li>
+                        <li>Fashion</li>
+                        <li>Amazon Pay</li>
+                    </ul>
                 </div>
             </div>
         </header>

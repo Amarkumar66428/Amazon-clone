@@ -2,7 +2,7 @@ import React from 'react'
 
 const MainPage = () => {
     return (
-        <section>
+        <section className='sale-hero'>
             <div className='conta_iner'>
                 <div className='offer_img' >
                     <figure>

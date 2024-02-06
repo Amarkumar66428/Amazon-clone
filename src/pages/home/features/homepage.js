@@ -8,9 +8,6 @@ const MainPage = () => {
                     <figure>
                         <img src='../images/offer1.png' alt='offer1' />
                     </figure>
-                    <figure>
-                        <img src='../images/offer1.png' alt='offer1' />
-                    </figure>
                 </div>
             </div>
         </section>

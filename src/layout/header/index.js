@@ -14,41 +14,37 @@ const Header = () => {
             <div>
                 <div className='nav-belt'>
                     <div className='nav-left'>
-                        <div className='nav-logo'>
+                        <div className='nav-logo' id='set'>
                             <figure>
                                 <img src='../images/amazon_icon.png' alt="amazon_icon" />
                             </figure>
                             <span>.in</span>
                         </div>
-                        <div className='nav-global-location-slot'>
+                        <div className='nav-global-location-slot' id='set'>
                             <span className='nav-location' />
                             <HeaderContent upperValue="DelIvering to california" lowerValue="Update location" />
                         </div>
                     </div>
                     <SearchBar />
                     <div className='nav-right'>
-                        <a className='nav-tools'>
+                        <div className='nav-tools' id='set'>
                             <select>
                                 <option value selected>En</option>
                             </select>
-                        </a>
-                        <a>
+                        </div>
+                        <div id='set'>
                             <HeaderContent upperValue="hello, sign in" lowerValue="Account & Lists" />
-                        </a>
-                        <a>
+                        </div>
+                        <div id='set'>
                             <HeaderContent upperValue="Returns" lowerValue="& Orders" />
-                        </a>
-                        <a className='nav-cart'>
-                            <div>
-                                <span className='nav-cart-count'>0</span>
-                            </div>
-                            <div>
-                                <span>cart</span>
-                            </div>
-                        </a>
+                        </div>
+                        <div className='nav-cart' id='set'>
+                            <span className='nav-cart-count'>0</span>
+                            <span>cart</span>
+                        </div>
                     </div>
                 </div>
-                <div className='nav-xshop'>
+                <div className={"nav-xshop"}  >
                     <ul>
                         <li>ALl</li>
                         <li>Fresh</li>

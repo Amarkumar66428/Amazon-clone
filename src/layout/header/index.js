@@ -1,14 +1,20 @@
 import React, { useEffect, useState } from 'react'
 import HeaderContent from '../../Components/headerContent';
 import SearchBar from '../../Components/searchbar';
+import { useNavigate } from 'react-router-dom';
 
 const Header = () => {
     const [scroll, setScroll] = useState(false);
+    const navigate = useNavigate();
     useEffect(() => {
         window.addEventListener("scroll", () => {
             setScroll(window.scrollY > 10);
         });
     }, []);
+
+    const handleSignIn = () => {
+        navigate("/signin");
+    }
     return (
         <header className={scroll ? "scrolled" : ""}>
             <div>
@@ -33,7 +39,7 @@ const Header = () => {
                             </select>
                         </div>
                         <div id='set'>
-                            <HeaderContent upperValue="hello, sign in" lowerValue="Account & Lists" />
+                            <HeaderContent upperValue="hello, sign in" lowerValue="Account & Lists" onClick={handleSignIn} />
                         </div>
                         <div id='set'>
                             <HeaderContent upperValue="Returns" lowerValue="& Orders" />

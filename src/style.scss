@@ -453,6 +453,7 @@ img {
             text-decoration: none;
             padding: 1px 8px 0 6px;
             margin: 1px;
+            border: 1px solid transparent;
 
             figure {
                 height: 57px;
@@ -684,10 +685,11 @@ img {
             font-size: 16px;
             margin: 4px;
             cursor: pointer;
+            border: 1px solid transparent;
         }
 
         li:hover {
-            border: 1px solid #ccc;
+            border: 1px solid #fff;
         }
 
     }
